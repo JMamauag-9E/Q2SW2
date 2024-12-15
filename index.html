@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Robotics Club Registration</title>
+
+	<!-- SETUP BOOTSTRAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- link to JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!-- Add custom CSS (optional, for custom styles like radio buttons) -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<!-- Robotics Club Registration -->
+<div class="container p-5 my-5">
+	<h2 id="login-form">Robotics Club Registration</h2>
+
+	<form>
+		<!-- Name -->
+	    <div class="mb-3">
+	        <label for="inputName" class="form-label">Name</label>
+	        <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+	    </div>
+
+	    <!-- Age -->
+	    <div class="mb-3">
+	        <label for="inputAge" class="form-label">Age</label>
+	        <input type="number" class="form-control" id="inputAge" placeholder="Age" required>
+	    </div>
+
+	    <!-- Email -->
+	    <div class="mb-3">
+	        <label for="inputEmail" class="form-label">Email</label>
+	        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+	    </div>
+
+	    <!-- Phone Number -->
+	    <div class="mb-3">
+	        <label for="inputPhone" class="form-label">Phone Number</label>
+	        <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" required>
+	    </div>
+	     
+	    <!-- Preferred Robotic Topics -->
+	    <div class="mb-3">
+	    	<p><strong>Preferred Robotic Topics:</strong></p>
+	        <div class="form-check">
+	            <input class="form-check-input" type="checkbox" value="" id="checkEngineering">
+	            <label class="form-check-label" for="checkEngineering">Engineering</label>
+	        </div>
+	        <div class="form-check">
+	            <input class="form-check-input" type="checkbox" value="" id="checkTechnology">
+	            <label class="form-check-label" for="checkTechnology">Technology</label>
+	        </div>
+	        <div class="form-check">
+	            <input class="form-check-input" type="checkbox" value="" id="checkInventions">
+	            <label class="form-check-label" for="checkInventions">Inventions</label>
+	        </div>
+	    </div>
+
+	    <!-- Level -->
+	    <div class="mb-3">
+	    	<p><strong>What level are you?</strong></p>
+	    	<div class="form-check">
+				<input class="form-check-input" type="radio" name="level" value="beginner" checked>
+				<label class="form-check-label">Beginner</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="level" value="intermediate">
+				<label class="form-check-label">Intermediate</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="level" value="advanced">
+				<label class="form-check-label">Advanced</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="level" value="master">
+				<label class="form-check-label">Master</label>
+			</div>
+	    </div>
+
+	    <!-- Projects Dropdown with Radio Buttons -->
+	    <div class="mb-3">
+	      <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              Preferred Robot Projects
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="project" value="Prosthetics" id="prosthetics">
+                  <label class="form-check-label" for="prosthetics">Prosthetics</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="project" value="Cleaners" id="cleaners">
+                  <label class="form-check-label" for="cleaners">Cleaners</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="project" value="Movable CCTV" id="movableCCTV">
+                  <label class="form-check-label" for="movableCCTV">Movable CCTV</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+	    </div>
+
+	    <!-- Reason for Joining -->
+	    <div class="mb-3 mt-3">
+	        <label for="comment" class="form-label">Reason for Joining:</label>
+	        <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+	    </div>
+
+	    <!-- Submit Button -->
+	    <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+</body>
+</html>
+
+
